@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego ahorcado</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="img/logo.png" alt="Logo Alura" class="logo" />
+    <div id="div-desaparece" class="home-buttons">
+      <a href="#forca">
+        <!-- Buton/input -->
+        <input
+          type="submit"
+          class="btn-start"
+          value="Iniciar Juego"
+          id="iniciar-juego"
+          onclick="StartGame()"
+        />
+      </a>
+    </div>
+
+    <div id="div-aparece-ahorcado" class="canvas">
+      <!-- Canvas -->
+
+      <canvas id="forca" width="1200px" height="960px"></canvas>
+      <div class="subrayado"></div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="horca.js"></script>
+    <script src="canva.js"></script>
+  </body>
+</html>
